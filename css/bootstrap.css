@@ -6,11 +6,11 @@
  */
 
 header{
-  background-image: url("../img/bg-header.png");
+  background-image: url("../img/bg-header-black.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 50vh;
+  min-height: 100vh;
 }
 
 #btn-lihat{
@@ -30,7 +30,7 @@ header{
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 50vh;
+  min-height: 100vh;
 }
 
 :root {
@@ -77,6 +77,7 @@ html {
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
 }
 
 @-ms-viewport {
@@ -4414,6 +4415,10 @@ input[type="button"].btn-block {
   height: 200px;
 }
 
+.card:hover {
+  transform: scale(1.1);
+}
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -4432,11 +4437,11 @@ input[type="button"].btn-block {
 .card-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 1.25rem;
+  padding: 0.5rem;
 }
 
 .card-title {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .card-subtitle {
@@ -4509,7 +4514,8 @@ input[type="button"].btn-block {
 
 .card-img-top {
   margin: auto;
-  height: 100px;
+  width: 60%;
+  height: 60% ;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
